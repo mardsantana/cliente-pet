@@ -36,8 +36,9 @@ import lombok.extern.log4j.Log4j2;
 	public ClienteDetalhadoResponse getClienteAtravesId(UUID idCliente) {
 		log.info("[inicia] ClienteController - getClienteAtravesId");
 		log.info("[idCliente] {}", idCliente);
+		ClienteDetalhadoResponse clienteDetalhado = clienteService.buscaClienteAtravesId(idCliente);
 		log.info("[finaliza] ClienteController - getClienteAtravesId");
-		return null;
+		return clienteDetalhado;
 	}
 
 }
