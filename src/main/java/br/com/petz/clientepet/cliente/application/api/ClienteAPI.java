@@ -20,7 +20,7 @@ public interface ClienteAPI {
 	@PostMapping
 	@ResponseStatus(code = HttpStatus.CREATED)
 	ClienteResponse postCliente(@Valid @RequestBody ClienteRequest clienteRequest);
-	
+
 	@GetMapping
 	@ResponseStatus(code = HttpStatus.OK)
 	List<ClienteListResponse> getTodosClientes();
@@ -28,9 +28,6 @@ public interface ClienteAPI {
 	@GetMapping(value = "/{idCliente}")
 	@ResponseStatus(code = HttpStatus.OK)
 	ClienteDetalhadoResponse getClienteAtravesId(@PathVariable UUID idCliente);
-
-	
-	
 
 }
 

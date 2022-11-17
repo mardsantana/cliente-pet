@@ -1,3 +1,16 @@
 server:
  servlet:
    context-path: /cliente-pet/api
+   
+spring:
+  datasource:
+    url: jdmc:h2:mem:demodb
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+    
+  h2:
+    console:
+      enabled: true
+      path: /h2-console       
+   
