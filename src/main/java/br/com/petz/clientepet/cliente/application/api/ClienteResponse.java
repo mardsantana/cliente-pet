@@ -9,5 +9,4 @@ import lombok.Value;
 @Builder
 public class ClienteResponse {
 	private UUID idCliente;
-
 }

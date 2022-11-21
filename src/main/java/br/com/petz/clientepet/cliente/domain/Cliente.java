@@ -43,7 +43,7 @@ public class Cliente {
 	private String cpf;
 	@NotNull
 	private Boolean aceitaTermos;
-
+	
 	private LocalDateTime dataHoraDoCadastro;
 	private LocalDateTime dataHoraDaUltimaAlteracao;
 
@@ -58,5 +58,4 @@ public class Cliente {
 		this.aceitaTermos = clienteRequest.getAceitaTermos();
 		this.dataHoraDoCadastro = LocalDateTime.now();
 	}
-
 }

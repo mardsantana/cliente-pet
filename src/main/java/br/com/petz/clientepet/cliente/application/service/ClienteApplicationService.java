@@ -22,26 +22,27 @@ public class ClienteApplicationService implements ClienteService {
 
 	@Override
 	public ClienteResponse criaCliente(ClienteRequest clienteRequest) {
-		log.info("[inicia] ClienteApplicatinService - criaCliente");
+		log.info("[inicia] ClienteApplicationService - criaCliente");
 		Cliente cliente = clienteRepository.salva(new Cliente(clienteRequest));
-		log.info("[finaliza] ClienteApplicatinService - criaCliente");
-		return ClienteResponse.builder().idCliente(cliente.getIdCliente()).build();
+		log.info("[finaliza] ClienteApplicationService - criaCliente");
+		return ClienteResponse.builder()
+				.idCliente(cliente.getIdCliente())
+				.build();
 	}
 
 	@Override
 	public List<ClienteListResponse> buscaTodosClientes() {
-		log.info("[inicia] ClienteApplicatinService - buscaTodosClientes");
+		log.info("[inicia] ClienteApplicationService - buscaTodosClientes");
 		List<Cliente> clientes = clienteRepository.buscaTodosClientes();
-		log.info("[finaliza] ClienteApplicatinService - buscaTodosClientes");
+		log.info("[finaliza] ClienteApplicationService - buscaTodosClientes");
 		return ClienteListResponse.converte(clientes);
 	}
 
 	@Override
 	public ClienteDetalhadoResponse buscaClienteAtravesId(UUID idCliente) {
-		log.info("[inicia] ClienteApplicatinService - buscaClienteId");
+		log.info("[inicia] ClienteApplicationService - buscaClienteAtravesId");
 		Cliente cliente = clienteRepository.buscaClienteAtravesId(idCliente);
-		log.info("[finaliza] ClienteApplicatinService - buscaClienteId");
+		log.info("[finaliza] ClienteApplicationService - buscaClienteAtravesId");
 		return new ClienteDetalhadoResponse(cliente);
 	}
-
 }

@@ -29,7 +29,5 @@ public class ClienteDetalhadoResponse {
 		this.sexo = cliente.getSexo();
 		this.aceitaTermos = cliente.getAceitaTermos();
 		this.dataHoraDoCadastro = cliente.getDataHoraDoCadastro();
-
-	}
-
+	}	
 }

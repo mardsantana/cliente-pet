@@ -9,7 +9,6 @@ import lombok.Value;
 
 @Value
 public class ClienteListResponse {
-
 	private UUID idCliente;
 	private String nomeCompleto;
 	private String cpf;
@@ -23,12 +22,11 @@ public class ClienteListResponse {
 	}
 
 	private ClienteListResponse(Cliente cliente) {
-		super();
 		this.idCliente = cliente.getIdCliente();
-		this.nomeCompleto = cliente.getCelular();
-		this.cpf = cliente.getCelular();
-		this.email = cliente.getCelular();
+		this.nomeCompleto = cliente.getNomeCompleto();
+		this.cpf = cliente.getCpf();
+		this.email = cliente.getEmail();
 		this.celular = cliente.getCelular();
 	}
-	
 }
+
