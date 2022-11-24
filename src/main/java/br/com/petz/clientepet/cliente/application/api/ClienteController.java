@@ -42,4 +42,12 @@ import lombok.extern.log4j.Log4j2;
 		return clienteDetalhado;
 	}
 
+	@Override
+	public void deletaClienteAtravesId(UUID idCliente) {
+		log.info("[inicia] ClienteController - deletaClienteAtravesId");
+		log.info("[idCliente] {}", idCliente);
+		log.info("[finaliza] ClienteController - deletaClienteAtravesId");
+		
+	}
+
 }
