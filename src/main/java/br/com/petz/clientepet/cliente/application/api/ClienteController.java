@@ -46,6 +46,7 @@ import lombok.extern.log4j.Log4j2;
 	public void deletaClienteAtravesId(UUID idCliente) {
 		log.info("[inicia] ClienteController - deletaClienteAtravesId");
 		log.info("[idCliente] {}", idCliente);
+		clienteService.deletaClienteAtravesId(idCliente);
 		log.info("[finaliza] ClienteController - deletaClienteAtravesId");
 		
 	}
