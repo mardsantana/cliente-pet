@@ -8,7 +8,6 @@ import javax.validation.Valid;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.petz.clientepet.pet.application.service.PetService;
-import br.com.petz.clientepet.pet.domain.Pet;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 
