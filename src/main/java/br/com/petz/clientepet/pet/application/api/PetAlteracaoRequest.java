@@ -30,4 +30,46 @@ public class PetAlteracaoRequest {
 		private Integer peso;
 
 	}
+
+	public @NotBlank String getNomePet() {
+		return null;
+	}
+
+	public Porte getPorte() {
+		return null;
+	}
+
+	public @NotNull TipoPet getTipo() {
+		return null;
+	}
+
+	public String getMicrochip() {
+		return null;
+	}
+
+	public @NotBlank String getRaca() {
+		return null;
+	}
+
+	public @NotNull SexoPet getSexo() {
+		return null;
+	}
+
+	public String getPelagemCor() {
+		return null;
+	}
+
+	public @NotNull LocalDate getDataNascimento() {
+		return null;
+	}
+
+	public String getRga() {
+		return null;
+	}
+
+	public Integer getPeso() {
+		return null;
+	}
+
+	
 }
